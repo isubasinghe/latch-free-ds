@@ -8,7 +8,9 @@ class Node {
         T *value;
         void *next;
 };
-
+// Why no delete method you ask
+// well delete gets really complex, 
+// you need RCU or ref counting or GC really 
 template <class T>
 class LinkedList {
     private:
